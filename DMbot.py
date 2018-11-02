@@ -36,7 +36,7 @@ def main():
             print("Can't message " + str(new_followers[x]) + " due to " + str(e.e))
             continue
         else:
-            print("Sucessfully sent a welcome message to " + str(new_followers[x]) + "!")
+            print("Successfully sent a welcome message to " + str(new_followers[x]) + "!")
 
 if __name__ == "__main__":
     main()
