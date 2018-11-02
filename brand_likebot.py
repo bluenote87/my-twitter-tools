@@ -48,6 +48,7 @@ def main():
                 continue
             else:
                 print("Added tweet #" + str(favorite) + " to favorites!")
+         print("Liked " + str(likes) + " tweets with brand " + str(brands[idx]))
 
 if __name__ == "__main__":
     main()
