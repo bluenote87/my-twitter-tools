@@ -23,6 +23,7 @@ def main():
         result = t.search.tweets(q=hashtags[idx], count=80)
     
         liked_tweets = list()
+        likes = 0
 
         for x in range(0, len(result['statuses'])):
             flagged = False
@@ -48,6 +49,8 @@ def main():
                 continue
             else:
                 print("Added tweet #" + str(favorite) + " to favorites!")
+                likes = likes + 1
+        print("Liked " + str(likes) + " tweets with the query " + str(hashtags[idx]))
 
 if __name__ == "__main__":
     main()
