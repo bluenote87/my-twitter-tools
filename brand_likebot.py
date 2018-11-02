@@ -23,6 +23,7 @@ def main():
         result = t.favorites.list(screen_name = brands[idx], count=10)
     
         liked_tweets = list()
+        likes = 0
 
         for x in range(0, len(result)):
             flagged = False
@@ -48,6 +49,7 @@ def main():
                 continue
             else:
                 print("Added tweet #" + str(favorite) + " to favorites!")
+                likes = likes + 1
          print("Liked " + str(likes) + " tweets with brand " + str(brands[idx]))
 
 if __name__ == "__main__":
